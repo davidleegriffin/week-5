@@ -1,4 +1,4 @@
-body, html {
+ body, html {
   padding: 0;
   margin: 0;
 }
@@ -120,4 +120,4 @@ main {
 .full.click-target:hover {
   background-color: white;
   cursor: no-drop;
-}
+}  
