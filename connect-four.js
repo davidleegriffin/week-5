@@ -9,10 +9,17 @@ function updateUI(){
     } else {
         board.classList.remove('is-invisible');
         document.getElementById('game-name').innerHTML = `<h1>${game.getName()}</h1>`;
+
+       
+
     }
 }
 
+
+
 window.addEventListener('DOMContentLoaded', e => {
+
+
     
     document.getElementById('form-holder').addEventListener('keyup', e => {
         let player1 = document.getElementById('player-1-name');
@@ -28,7 +35,9 @@ window.addEventListener('DOMContentLoaded', e => {
         game = new Game(player1.value, player2.value);
         document.getElementById('new-game').setAttribute('disabled', 'true');
         updateUI();
-    })
+    });
+
+    
 })
 
 
